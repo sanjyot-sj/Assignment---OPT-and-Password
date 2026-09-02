@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OTP Generator and Validator</title>
+    <link href="./style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 style="text-align: center;">OTP Generator And Validator</h1>
+    <div class="blcontainer" id="bluecontainer">
+        <div class="container_second">
+            <button class="btngenerateotp" id="generateOTP_button" onclick="GenerateOTP()"> <b>Generate OTP </b></button> 
+            <input class="optdisplay" id="generatedOTPDisplay">
+        </div>
+
+        <div class="middelcontainer">
+            <div class="whitecontainer" style="border-radius: 20px;">
+                <p style="text-align: center; font-size: 30px;"> <b>OPT Varification</b> </p>
+                <p style="text-align: center; font-size: 20px;"> Please type the varificarion code sent above</p>
+                <p style="text-align: center; font-size: 20px;"> the OTP Will Expire in 60 seconds</p>
+
+                <div class="inputfield">
+                    <input class="inputotp" id="FirstOPT">
+                    <input class="inputotp" id="SecondOTP">
+                    <input class="inputotp" id="ThirdOPT">
+                    <input class="inputotp" id="FourthOTP">
+                </div>
+                <br>
+                <button class="veryfyotp" id="VerifyOTPButton" onclick="VerifyOTP()"> Verify OTP</button>
+                <br>
+                <p style="text-align: center;"> Didn't Recived Code ? <a href="./index.html"> Request Again</a> </p>
+            </div>
+
+            <div class="middlerightcontainer" id="middlerightcontainerid">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
